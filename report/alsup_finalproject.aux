@@ -1,0 +1,131 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\citation{Bishop}
+\citation{ESL}
+\citation{GLASSO}
+\providecommand \oddpage@label [2]{}
+\babel@aux{english}{}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{1}{section.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Graphical models}{1}{subsection.1.1}\protected@file@percent }
+\newlabel{eq:gauss_density}{{1}{1}{Graphical models}{equation.1.1}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {1}{\ignorespaces A simple graphical model with $p=5$ covariates.\relax }}{2}{figure.caption.1}\protected@file@percent }
+\providecommand*\caption@xref[2]{\@setref\relax\@undefined{#1}}
+\newlabel{fig:graphical_model}{{1}{2}{A simple graphical model with $p=5$ covariates.\relax }{figure.caption.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.2}Covariance estimation}{2}{subsection.1.2}\protected@file@percent }
+\citation{BV}
+\citation{matrixcookbook}
+\newlabel{eq:cov_mle}{{2}{3}{Covariance estimation}{equation.1.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.3}Sparsity and the graphical lasso}{3}{subsection.1.3}\protected@file@percent }
+\newlabel{eq:glasso_primal}{{3}{3}{Sparsity and the graphical lasso}{equation.1.3}{}}
+\newlabel{eq:glasso_dual}{{4}{4}{Sparsity and the graphical lasso}{equation.1.4}{}}
+\citation{CD}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Computing the graphical lasso solution}{5}{section.2}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Coordinate descent algorithms}{5}{subsection.2.1}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {1}{\ignorespaces Coordinate descent algorithm\relax }}{5}{algocf.1}\protected@file@percent }
+\newlabel{alg:cd}{{1}{5}{Coordinate descent algorithms}{algocf.1}{}}
+\newlabel{eq:cd_linear}{{5}{5}{Coordinate descent algorithms}{equation.2.5}{}}
+\newlabel{eq:lasso}{{6}{6}{Coordinate descent algorithms}{equation.2.6}{}}
+\newlabel{eq:box_qp}{{7}{6}{Coordinate descent algorithms}{equation.2.7}{}}
+\newlabel{eq:lasso_kkt}{{8}{6}{Coordinate descent algorithms}{equation.2.8}{}}
+\citation{GLASSO}
+\citation{Banerjee}
+\citation{MH}
+\newlabel{eq:lasso_update}{{9}{7}{Coordinate descent algorithms}{equation.2.9}{}}
+\newlabel{eq:boxqp_update}{{10}{7}{Coordinate descent algorithms}{equation.2.10}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Glasso and DP-Glasso}{7}{subsection.2.2}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {2}{\ignorespaces Performance of the CD algorithm~\ref  {alg:cd} on the QP with box constraints~\ref  {eq:box_qp} (left column in blue) and the lasso problem~\ref  {eq:lasso} (right column in red) on random problems of dimension $d=50$. In all cases we set a tolerance of $\epsilon = 10^{-12}$ on the relative difference of objective function values and for the lasso problem we set $\lambda = 1$. The top row shows the performance on a random problem where ${\boldsymbol  A} = {\boldsymbol  B}^T {\boldsymbol  B} + {\boldsymbol  I}$, where ${\boldsymbol  B} \in \mathbb  {R}^{d\times d}$ is a random matrix and ${\boldsymbol  I}$ is the identity, ensuring that the smallest eigenvalue of ${\boldsymbol  A}$ is at least 1. For the bottom row we use ${\boldsymbol  A} = {\boldsymbol  B}^T {\boldsymbol  B} + 10\times {\boldsymbol  I}$, so that the smallest eigenvalues is now at least 10.\relax }}{8}{figure.caption.3}\protected@file@percent }
+\newlabel{fig:CD_convergence}{{2}{8}{Performance of the CD algorithm~\ref {alg:cd} on the QP with box constraints~\ref {eq:box_qp} (left column in blue) and the lasso problem~\ref {eq:lasso} (right column in red) on random problems of dimension $d=50$. In all cases we set a tolerance of $\epsilon = 10^{-12}$ on the relative difference of objective function values and for the lasso problem we set $\lambda = 1$. The top row shows the performance on a random problem where ${\boldsymbol A} = {\boldsymbol B}^T {\boldsymbol B} + {\boldsymbol I}$, where ${\boldsymbol B} \in \R ^{d\times d}$ is a random matrix and ${\boldsymbol I}$ is the identity, ensuring that the smallest eigenvalue of ${\boldsymbol A}$ is at least 1. For the bottom row we use ${\boldsymbol A} = {\boldsymbol B}^T {\boldsymbol B} + 10\times {\boldsymbol I}$, so that the smallest eigenvalues is now at least 10.\relax }{figure.caption.3}{}}
+\citation{MH}
+\citation{GLASSO}
+\citation{Banerjee}
+\newlabel{eq:schur}{{11}{9}{Glasso and DP-Glasso}{equation.2.11}{}}
+\newlabel{eq:schur2}{{12}{9}{Glasso and DP-Glasso}{equation.2.12}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Glasso}{9}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{eq:primal_kkt}{{13}{9}{Glasso}{equation.2.13}{}}
+\citation{MH}
+\citation{MH}
+\citation{MH}
+\@writefile{loa}{\contentsline {algocf}{\numberline {2}{\ignorespaces Glasso\relax }}{10}{algocf.2}\protected@file@percent }
+\newlabel{alg:glasso}{{2}{10}{Glasso}{algocf.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}DP-Glasso}{10}{subsubsection.2.2.2}\protected@file@percent }
+\citation{MH}
+\citation{GLASSO}
+\citation{MH}
+\citation{GLASSO}
+\citation{MH}
+\citation{ADMM}
+\citation{princetonlecture}
+\@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces The primal (blue) and dual (red) objective values at each iteration of the Glasso algorithm on a random problem of dimension $p=50$. Here $\boldsymbol  S$ is the sample covariance of $n=5$ data points drawn from a $N({\bf  0}, 1.2^2\times \boldsymbol  I)$ distribution and $\lambda = 0.5$. The left plot shows the primal objective values $f(\boldsymbol  \Theta )$ and the dual objective values $g(\boldsymbol  \Sigma )$ while the right plot shows the primal objective values $f(\boldsymbol  \Sigma ^{-1})$ using the true primal variable as well as the dual objective values $g(\boldsymbol  \Sigma )$. In the left plot the two curves cross indicating that $\boldsymbol  \Theta $ is not primal feasible (i.e. not positive definite).\relax }}{11}{figure.caption.5}\protected@file@percent }
+\newlabel{fig:glasso_primaldual}{{3}{11}{The primal (blue) and dual (red) objective values at each iteration of the Glasso algorithm on a random problem of dimension $p=50$. Here $\sampcov $ is the sample covariance of $n=5$ data points drawn from a $N(\bzero , 1.2^2\times \eye )$ distribution and $\lambda = 0.5$. The left plot shows the primal objective values $f(\preci )$ and the dual objective values $g(\cov )$ while the right plot shows the primal objective values $f(\cov ^{-1})$ using the true primal variable as well as the dual objective values $g(\cov )$. In the left plot the two curves cross indicating that $\preci $ is not primal feasible (i.e. not positive definite).\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces A summary of the derivations of the Glasso and DP-Glasso algorithms presented in \cite  {MH} and \cite  {GLASSO}. The matrix $\boldsymbol  P= \mathrm  {abs}\left ( \boldsymbol  \Theta  \right )$ has non-negative entries, $\mathaccentV {tilde}07E{\boldsymbol  p}_{12} = \boldsymbol  p_{12}/\sigma _{22}$ (recall $\sigma _{22} = s_{22} + \lambda $), and $\boldsymbol  1_p$ is a $p\times 1$ vector of all 1's.\relax }}{12}{figure.caption.6}\protected@file@percent }
+\newlabel{fig:primaldual_diagram}{{4}{12}{A summary of the derivations of the Glasso and DP-Glasso algorithms presented in \cite {MH} and \cite {GLASSO}. The matrix $\bP = \abs {\preci }$ has non-negative entries, $\tilde {\bp }_{12} = \bp _{12}/\sscov _{22}$ (recall $\sscov _{22} = s_{22} + \lambda $), and $\one _p$ is a $p\times 1$ vector of all 1's.\relax }{figure.caption.6}{}}
+\@writefile{loa}{\contentsline {algocf}{\numberline {3}{\ignorespaces DP-Glasso\relax }}{13}{algocf.3}\protected@file@percent }
+\newlabel{alg:dpglasso}{{3}{13}{DP-Glasso}{algocf.3}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces The primal (blue) and dual (red) objective values at each iteration of the DP-Glasso algorithm on a random problem of dimension $p=50$. Here $\boldsymbol  S$ is the sample covariance of $n=5$ data points drawn from a $N({\bf  0}, 16\times \boldsymbol  I)$ distribution and $\lambda = 0.5$. The left plot shows the primal objective values $f(\boldsymbol  \Theta )$ and the dual objective values $g(\boldsymbol  \Sigma )$ while the right plot shows the primal objective values $f(\boldsymbol  \Theta )$ and the dual objective values $g(\boldsymbol  \Theta ^{-1}-\boldsymbol  S)$ using the true dual variable.\relax }}{13}{figure.caption.8}\protected@file@percent }
+\newlabel{fig:dpglasso_primaldual}{{5}{13}{The primal (blue) and dual (red) objective values at each iteration of the DP-Glasso algorithm on a random problem of dimension $p=50$. Here $\sampcov $ is the sample covariance of $n=5$ data points drawn from a $N(\bzero , 16\times \eye )$ distribution and $\lambda = 0.5$. The left plot shows the primal objective values $f(\preci )$ and the dual objective values $g(\cov )$ while the right plot shows the primal objective values $f(\preci )$ and the dual objective values $g(\preci ^{-1}-\sampcov )$ using the true dual variable.\relax }{figure.caption.8}{}}
+\citation{princetonlecture}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}ADMM}{14}{subsection.2.3}\protected@file@percent }
+\@writefile{loa}{\contentsline {algocf}{\numberline {4}{\ignorespaces ADMM for the graphical lasso\relax }}{15}{algocf.4}\protected@file@percent }
+\newlabel{alg:admm}{{4}{15}{ADMM}{algocf.4}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Comparison of algorithms}{15}{subsection.2.4}\protected@file@percent }
+\citation{Wainwright}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces The primal (blue) and dual (red) objective values at each iteration of ADMM on a random problem of dimension $p=50$. Here $\boldsymbol  S$ is the sample covariance of $n=5$ data points drawn from a $N({\bf  0}, \boldsymbol  I)$ distribution, $\lambda = 0.5$, and $\mu = 1.0$. The left plot shows the primal objective values $f(\boldsymbol  \Theta )$ and the dual objective values $g(\boldsymbol  Y)$ while the right plot shows the primal objective values $f(\boldsymbol  \Theta )$ and the dual objective values $g(\boldsymbol  \Theta ^{-1}-\boldsymbol  S)$ using the true dual variable.\relax }}{16}{figure.caption.10}\protected@file@percent }
+\newlabel{fig:admm_primaldual}{{6}{16}{The primal (blue) and dual (red) objective values at each iteration of ADMM on a random problem of dimension $p=50$. Here $\sampcov $ is the sample covariance of $n=5$ data points drawn from a $N(\bzero , \eye )$ distribution, $\lambda = 0.5$, and $\mu = 1.0$. The left plot shows the primal objective values $f(\preci )$ and the dual objective values $g(\dualvar )$ while the right plot shows the primal objective values $f(\preci )$ and the dual objective values $g(\preci ^{-1}-\sampcov )$ using the true dual variable.\relax }{figure.caption.10}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {7}{\ignorespaces The Frobenius norms $\delimiter "026B30D \boldsymbol  \Sigma \boldsymbol  \Theta - \boldsymbol  I\delimiter "026B30D _F$ at each iteration in Glasso, DP-Glasso, and ADMM on a random $p=50$ dimensional problem. We set $\lambda = 1$, $\mu = 1$, and drew $n=5$ data points from $N({\bf  0},\boldsymbol  I)$ to compute the sample covariance $\boldsymbol  S$.\relax }}{17}{figure.caption.11}\protected@file@percent }
+\newlabel{fig:normWX}{{7}{17}{The Frobenius norms $\|\cov \preci - \eye \|_F$ at each iteration in Glasso, DP-Glasso, and ADMM on a random $p=50$ dimensional problem. We set $\lambda = 1$, $\mu = 1$, and drew $n=5$ data points from $N(\bzero ,\eye )$ to compute the sample covariance $\sampcov $.\relax }{figure.caption.11}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {8}{\ignorespaces We set a tolerance of $\epsilon = 10^{-9}$ on the relative change in the primal objective function value and let all three algorithms run until convergence for 10 different values of $\lambda $ (0.1 to 10 log-spaced) on the same random problem with $p=50$ and $n=20$. For ADMM we set $\mu =1$. The left plot shows the number of iterations required for convergence (averaged over 25 trials) while the right plot shows the actual run time in seconds. For all timings the processor was 1.6 GHz Dual-Core Intel Core i5.\relax }}{17}{figure.caption.12}\protected@file@percent }
+\newlabel{fig:runtimes}{{8}{17}{We set a tolerance of $\epsilon = 10^{-9}$ on the relative change in the primal objective function value and let all three algorithms run until convergence for 10 different values of $\lambda $ (0.1 to 10 log-spaced) on the same random problem with $p=50$ and $n=20$. For ADMM we set $\mu =1$. The left plot shows the number of iterations required for convergence (averaged over 25 trials) while the right plot shows the actual run time in seconds. For all timings the processor was 1.6 GHz Dual-Core Intel Core i5.\relax }{figure.caption.12}{}}
+\citation{Wainwright}
+\@writefile{lof}{\contentsline {figure}{\numberline {9}{\ignorespaces The number of non-zero (nnz) elements of the computed precision matrix $\boldsymbol  \Theta $ for 20 different values of $\lambda $ (log-spaced) on a random $p=20$ dimensional problem with $n=10$. In the left plot we set a threshold of $10^{-4}$ so any entry with absolute value larger than $10^{-4}$ is counted as a zero. For the plot on the right the threshold is set to $10^{-8}$.\relax }}{18}{figure.caption.13}\protected@file@percent }
+\newlabel{fig:sparsity_3methods}{{9}{18}{The number of non-zero (nnz) elements of the computed precision matrix $\preci $ for 20 different values of $\lambda $ (log-spaced) on a random $p=20$ dimensional problem with $n=10$. In the left plot we set a threshold of $10^{-4}$ so any entry with absolute value larger than $10^{-4}$ is counted as a zero. For the plot on the right the threshold is set to $10^{-8}$.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Statistical guarantees of the graphical lasso}{18}{section.3}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {10}{\ignorespaces The convergence of Glasso, DP-Glasso, and ADMM on a random problem for $\lambda = 0.1$ (top-left), $\lambda = 0.5$ (top-right), $\lambda = 1$ (bottom-left), and $\lambda = 2$ (bottom-left). The dimension is $p=20$ and $n=10$ data points were drawn from $N({\bf  0}, \boldsymbol  I)$. We set a tight tolerance of $\epsilon = 10^{-12}$ on the relative error of the primal objective function $f$ between cycles. For ADMM we kept $\mu =1$.\relax }}{19}{figure.caption.14}\protected@file@percent }
+\newlabel{fig:convergence}{{10}{19}{The convergence of Glasso, DP-Glasso, and ADMM on a random problem for $\lambda = 0.1$ (top-left), $\lambda = 0.5$ (top-right), $\lambda = 1$ (bottom-left), and $\lambda = 2$ (bottom-left). The dimension is $p=20$ and $n=10$ data points were drawn from $N(\bzero , \eye )$. We set a tight tolerance of $\epsilon = 10^{-12}$ on the relative error of the primal objective function $f$ between cycles. For ADMM we kept $\mu =1$.\relax }{figure.caption.14}{}}
+\citation{Wainwright}
+\citation{dataset}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Modeling gene expression data}{20}{section.4}\protected@file@percent }
+\@writefile{lof}{\contentsline {figure}{\numberline {11}{\ignorespaces The error of the graphical lasso on the toy problem for $\lambda = 10\sqrt  {\frac  {\qopname  \relax o{log}p}{n}}$ and $\lambda = 5$ fixed as the sample size $n$ varies. For computing the solution we used the \texttt  {dpglasso.m} function and set a tolerance of $\epsilon = 10^{-4}$ on the Frobenius norm of the relative change in the precision matrix after each cycle.\relax }}{21}{figure.caption.15}\protected@file@percent }
+\newlabel{fig:sampsize}{{11}{21}{The error of the graphical lasso on the toy problem for $\lambda = 10\sqrt {\frac {\log p}{n}}$ and $\lambda = 5$ fixed as the sample size $n$ varies. For computing the solution we used the \texttt {dpglasso.m} function and set a tolerance of $\epsilon = 10^{-4}$ on the Frobenius norm of the relative change in the precision matrix after each cycle.\relax }{figure.caption.15}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {12}{\ignorespaces The non-zero elements of the graphical lasso for $\lambda = 10\sqrt  {\frac  {\qopname  \relax o{log}p}{n}} \approx 0.93$. The algorithm reached the maximum number of iterations (roughly 1 hour of CPU time) before converging.\relax }}{22}{figure.caption.16}\protected@file@percent }
+\newlabel{fig:gene10}{{12}{22}{The non-zero elements of the graphical lasso for $\lambda = 10\sqrt {\frac {\log p}{n}} \approx 0.93$. The algorithm reached the maximum number of iterations (roughly 1 hour of CPU time) before converging.\relax }{figure.caption.16}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {13}{\ignorespaces The non-zero elements of the graphical lasso for $\lambda = 50\sqrt  {\frac  {\qopname  \relax o{log}p}{n}} \approx 4.64$.\relax }}{23}{figure.caption.17}\protected@file@percent }
+\newlabel{fig:gene50}{{13}{23}{The non-zero elements of the graphical lasso for $\lambda = 50\sqrt {\frac {\log p}{n}} \approx 4.64$.\relax }{figure.caption.17}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {14}{\ignorespaces The non-zero elements of the graphical lasso for $\lambda = 100\sqrt  {\frac  {\qopname  \relax o{log}p}{n}} \approx 9.23$.\relax }}{24}{figure.caption.18}\protected@file@percent }
+\newlabel{fig:gene100}{{14}{24}{The non-zero elements of the graphical lasso for $\lambda = 100\sqrt {\frac {\log p}{n}} \approx 9.23$.\relax }{figure.caption.18}{}}
+\citation{*}
+\bibstyle{unsrt}
+\bibdata{references}
+\bibcite{Bishop}{1}
+\bibcite{ESL}{2}
+\bibcite{GLASSO}{3}
+\bibcite{BV}{4}
+\bibcite{matrixcookbook}{5}
+\bibcite{CD}{6}
+\bibcite{Banerjee}{7}
+\bibcite{MH}{8}
+\bibcite{ADMM}{9}
+\bibcite{princetonlecture}{10}
+\bibcite{Wainwright}{11}
+\bibcite{dataset}{12}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{25}{section.5}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{../code/lasso.m}{26}{lstlisting.-1}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{../code/QP\textunderscore box.m}{28}{lstlisting.-2}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{../code/glasso.m}{30}{lstlisting.-3}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{../code/dpglasso.m}{33}{lstlisting.-4}\protected@file@percent }
+\@writefile{lol}{\contentsline {lstlisting}{../code/glasso\textunderscore admm.m}{36}{lstlisting.-5}\protected@file@percent }

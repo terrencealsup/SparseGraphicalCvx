@@ -1,0 +1,167 @@
+\documentclass{siamonline190516}
+\usepackage[utf8]{inputenc}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{bm}
+\usepackage{mathtools}
+\usepackage{enumitem}
+\usepackage{dsfont}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{xcolor}
+\usepackage[ruled, vlined, linesnumbered]{algorithm2e} % Used for pseudo-code
+
+\usepackage{pgfpages}
+\usepackage{tikz}
+%\setbeameroption{show notes on second screen=left}
+%\usepackage[ansinew]{inputenc}
+\usepackage[english]{babel}              % zuletzt genannte Sprache ist aktiv
+% optionale Packages:
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{textpos}
+\usepackage{listings}
+%\usepackage[german]{babel}
+\usepackage[T1]{fontenc}
+%\usepackage[latin1]{inputenc}
+\usepackage[utf8]{inputenc}
+\usepackage{animate}
+\usepackage{longtable,tabularx}
+\usepackage{booktabs}
+\usepackage{pdfpages}
+%\usepackage[sorting=none]{biblatex}
+%\usepackage{ae}
+%\usepackage{matlab-prettifier}
+\lstset{basicstyle=\small\ttfamily,
+numbers=left,
+escapeinside=||
+}
+
+\graphicspath{{figures/},{../../figures/}}
+\DeclareGraphicsExtensions{.pdf,.eps,.png,.jpg,.jpeg}
+
+\usetikzlibrary{decorations.text}
+\usetikzlibrary{shapes,snakes}
+\usetikzlibrary{shapes}
+\usetikzlibrary{arrows}
+\usetikzlibrary{positioning}
+\usetikzlibrary{matrix}
+\usetikzlibrary{patterns}
+\usetikzlibrary{decorations.pathreplacing,decorations.pathmorphing,decorations.markings}
+\usetikzlibrary{positioning,tikzmark}
+\usepackage{pgfplots}
+
+
+\newcommand{\kibitz}[2]{\textcolor{#1}{#2}}
+\newcommand{\TODO}[1]  {\kibitz{red}   {[TODO: #1]}}
+\newcommand{\BP}[1]  {\kibitz{blue}   {[BP: #1]}}
+\newcommand{\TA}[1]{ \kibitz{purple} {TA: #1} }
+
+
+
+
+\newcommand{\PP}{\mathbb{P}}
+
+
+\newcommand{\bfH}{\bf H}
+\newcommand{\bfSigma}{\boldsymbol \Sigma}
+\newcommand{\bfG}{\boldsymbol \Gamma}
+\newcommand{\bfm}{\boldsymbol \mu}
+\newcommand{\bfepsilon}{\boldsymbol \epsilon}
+\newcommand{\se}{\text{SE}}
+\newcommand{\hell}{\mathrm{d}_{\mathrm{Hell}}}
+
+\newcommand{\rvx}{\boldsymbol X}
+
+
+% Notation
+\newcommand{\R}{\mathbb{R}} % Real numbers.
+\newcommand{\iid}{\stackrel{\text{i.i.d.}}{\sim}} % iid
+\newcommand{\mse}[1]{\mathrm{MSE}\left( #1 \right)} % MSE
+\newcommand{\E}[2]{\mathbb{E}_{#2}\left[ #1 \right]} % Expectation
+\newcommand{\var}[2]{\mathrm{Var}_{#1}\left[ #2 \right]} % variance
+\newcommand{\samples}{m} % Sample size.
+\newcommand{\fid}{h} % Fidelity parameter.
+\newcommand{\mfis}{\hat{f}_{\fid,\samples}}
+\newcommand{\params}{\boldsymbol \theta} % The parameters x.
+\newcommand{\obs}{\boldsymbol y} % The observation y.
+\newcommand{\map}{\mathcal{F}} % Parameters-to-observable map.
+\newcommand{\chisq}[2]{\chi^2\left( #1\ ||\ #2 \right)} % chi2
+\newcommand{\KL}[2]{\mathrm{KL}\left( #1\ ||\ #2 \right)} % KL
+\newcommand{\lapmean}{{\boldsymbol \mu}^{\mathrm{LAP}}} % Mean of Laplace apprxoximation.
+\newcommand{\lapcov}{{\boldsymbol \Sigma}^{\mathrm{LAP}}}
+\newcommand{\noise}{\boldsymbol \Gamma} % Noise covariance.
+\newcommand{\pot}{\Phi} % Potential
+
+
+\newcommand{\ones}{{\bf 1}} % vector of 1's
+\newcommand{\zeros}{{\bf 0}}
+
+\newcommand{\indicator}[1]{ {\bf 1} \left\{ #1 \right\}}
+
+\newcommand{\cost}{c} % Cost
+\newcommand{\acc}{\delta} % Accuracy 
+\newcommand{\hicost}{C_{\mathrm{hi}}}
+\newcommand{\offevals}{M_{\mathrm{fit}}}
+
+\newcommand{\dvg}{\nabla \cdot} % divergence operator
+
+\newcommand{\pr}{\pi_{\mathrm{pr}}} % Prior
+\newcommand{\prmean}{{\boldsymbol \mu}_{\mathrm{pr}}} % prior mean
+\newcommand{\prcov}{{\boldsymbol \Sigma}_{\mathrm{pr}}} % prior cov
+
+\newcommand{\orlicz}[1]{\left\| #1 \right\|_{\psi_2}}
+\newcommand{\dimx}{d} % Dimension of parameters
+\newcommand{\dimy}{d'} % Dimension of observations.
+\newcommand{\paramdomain}{\Theta} % Domain of the parameters
+\newcommand{\spatialdomain}{\Omega} % Domain of the spatial variable
+
+\newcommand{\bfx}{\boldsymbol x} % bold x for vectors
+\newcommand{\bfy}{\boldsymbol y}
+\newcommand{\bfz}{\boldsymbol z}
+\newcommand{\bfv}{\boldsymbol v}
+\newcommand{\bfw}{\boldsymbol w}
+\newcommand{\bfu}{\boldsymbol u}
+\newcommand{\bA}{\boldsymbol A}
+\newcommand{\eye}{\boldsymbol I} % Bold identity matrix
+\newcommand{\cbv}{\boldsymbol e} % coordinate basis vector
+
+\newcommand{\noisevar}{\boldsymbol \eta} % Noise rv eta
+
+
+\newtheorem{theorem}{Theorem}
+\newtheorem{lemma}{Lemma}
+\newtheorem{assumption}{Assumption}
+\newtheorem{definition}{Definition}
+\newtheorem{proposition}{Proposition}
+\newtheorem{remark}{Remark}
+
+\def\keywords{\vspace{.5em}
+{\textit{Keywords}:\,\relax%
+}}
+\def\endkeywords{\par}
+
+
+\title{Balancing surrogate-model accuracy and sampling in multifidelity importance sampling for Bayesian inverse problems}
+
+
+\author{Terrence Alsup \thanks{Courant Institute of Mathematical Sciences, NYU} \and Benjamin Peherstorfer \thanks{Courant Institute of Mathematical Sciences, NYU}}
+
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+
+\begin{abstract}
+Multifidelity methods leverage low-cost surrogate models to speed up computations and make occasional recourse to expensive high-fidelity models to establish accuracy guarantees. Because surrogate and high-fidelity models are used together, poor approximation by the surrogate models can be compensated with frequent recourse to high-fidelity models. Thus, there is a trade-off between investing computational resources to improve surrogate models and the frequency of making recourse to high-fidelity models; however, this trade-off is ignored by traditional model reduction methods that construct surrogate models that are meant to replace high-fidelity models rather than being used together with high-fidelity models. In this presentation, we consider multifidelity importance sampling and explicitly take into account the trade-off between improving the approximation quality of surrogate models for constructing biasing densities and the frequency of recourse to the high-fidelity models to estimate statistics. Given a tolerance on the error of the estimator, an optimization problem determines how much computation to invest into constructing a surrogate model versus sampling the high-fidelity model with the objective to minimize total computational cost.  Numerical examples demonstrate that optimal surrogate models have significantly lower fidelity than what typically is set as tolerance in traditional model reduction, leading to runtime speedups in our examples.
+\end{abstract}
+
+
+
+\end{document}

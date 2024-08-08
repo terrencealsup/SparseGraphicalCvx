@@ -1,0 +1,65 @@
+\begin{thebibliography}{10}
+
+\bibitem{Bishop}
+C.~M. Bishop.
+\newblock {\em Pattern Recognition and Machine Learning}.
+\newblock Springer, 2006.
+
+\bibitem{ESL}
+T.~Hastie, R.~Tibshirani, and J.~Friedman.
+\newblock {\em The Elements of Statistical Learning: Data Mining, Inference,
+  and Prediction}.
+\newblock Springer, 2 edition, 2009.
+
+\bibitem{GLASSO}
+J.~Friedman, T.~Hastie, and R.~Tibshirani.
+\newblock Sparse inverse covariance estimation with the graphical lasso.
+\newblock {\em Biostatistics}, 9(3):432--441, 2007.
+
+\bibitem{BV}
+S.~Boyd and L.~Vandenberghe.
+\newblock {\em Convex Optimization}.
+\newblock Cambridge University Press, 2004.
+
+\bibitem{matrixcookbook}
+K.~B. Petersen and M.~S. Pedersen.
+\newblock {\em The Matrix Cookbook}.
+\newblock 2012.
+
+\bibitem{CD}
+S.~J. Wright.
+\newblock Coordinate descent algorithms.
+\newblock {\em Mathematical Programming}, 151:3--34, 2015.
+
+\bibitem{Banerjee}
+O.~Banerjee, L.~El Ghaoui, and A.~d'Aspremont.
+\newblock Model selection through sparse maximum likelihood estimation for
+  multivariate {G}aussian or binary data.
+\newblock {\em Journal of Machine Learning Research}, 9:485--516, 2008.
+
+\bibitem{MH}
+R.~Mazumder and T.~Hastie.
+\newblock The graphical lasso: New insights and alternatives.
+\newblock {\em Electronic Journal of Statistics}, 6:2125--2149, 2012.
+
+\bibitem{ADMM}
+S.~Boyd, N.~Parikh, E.~Chu, B.~Peleato, and J.~Eckstein.
+\newblock Distributed optimization and statistical learning via the alternating
+  direction method of multipliers.
+\newblock {\em Foundations and Trends in Machine Learning}, 3(1):1--122, 2011.
+
+\bibitem{princetonlecture}
+Yuxin Chen.
+\newblock Large-scale optimization for data science: Alternating direction
+  method of multipliers {ELE} 522 lecture notes, 2019.
+
+\bibitem{Wainwright}
+M.~J. Wainwright.
+\newblock {\em High-Dimensional Statistics: A Non-Asymptotic Viewpoint}.
+\newblock Cambridge University Press, 2019.
+
+\bibitem{dataset}
+UCI Machine~Learning Repository.
+\newblock gene expression cancer {RNA-Seq} data set, 2016.
+
+\end{thebibliography}

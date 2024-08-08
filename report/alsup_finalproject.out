@@ -1,0 +1,14 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Graphical models}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Covariance estimation}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Sparsity and the graphical lasso}{section.1}% 4
+\BOOKMARK [1][-]{section.2}{Computing the graphical lasso solution}{}% 5
+\BOOKMARK [2][-]{subsection.2.1}{Coordinate descent algorithms}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.2}{Glasso and DP-Glasso}{section.2}% 7
+\BOOKMARK [3][-]{subsubsection.2.2.1}{Glasso}{subsection.2.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.2.2}{DP-Glasso}{subsection.2.2}% 9
+\BOOKMARK [2][-]{subsection.2.3}{ADMM}{section.2}% 10
+\BOOKMARK [2][-]{subsection.2.4}{Comparison of algorithms}{section.2}% 11
+\BOOKMARK [1][-]{section.3}{Statistical guarantees of the graphical lasso}{}% 12
+\BOOKMARK [1][-]{section.4}{Modeling gene expression data}{}% 13
+\BOOKMARK [1][-]{section.5}{Conclusion}{}% 14
